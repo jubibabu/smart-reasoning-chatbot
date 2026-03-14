@@ -2,12 +2,19 @@ import google.generativeai as genai
 import json
 import re
 import os
-
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+# Works both locally (.env) and on Streamlit Cloud (st.secrets)
+api_key = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY", None)
+
+if not api_key:
+    st.error("GEMINI_API_KEY not found. Add it to .env locally or Streamlit secrets on the cloud.")
+    st.stop()
+
+genai.configure(api_key=api_key)
 
 SYSTEM_PROMPT = """You are a Smart Reasoning Assistant. When given any problem or question, you MUST always respond in the following strict JSON format and nothing else:
 
