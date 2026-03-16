@@ -1,5 +1,7 @@
 An AI chatbot that breaks down complex problems step by step and explains its thinking — built with Google Gemini and Streamlit.
+
 Features:
+
 Breaks any question into sub-problems
 Shows full step-by-step reasoning trace
 Confidence indicator (High / Medium / Low)
