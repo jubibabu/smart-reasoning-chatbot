@@ -3,14 +3,19 @@ An AI chatbot that breaks down complex problems step by step and explains its th
 Features:
 
 Breaks any question into sub-problems
+
 Shows full step-by-step reasoning trace
+
 Confidence indicator (High / Medium / Low)
+
 Question history with one-click reload
 
-Tech Stack
+Tech Stack:
 
 Google Gemini 2.5 Flash — AI reasoning engine
+
 Streamlit — frontend UI
+
 Python — backend logic
 
 ## Live Demo
