@@ -11,3 +11,6 @@ Tech Stack
 Google Gemini 2.5 Flash — AI reasoning engine
 Streamlit — frontend UI
 Python — backend logic
+
+## Live Demo
+Deployed on Streamlit Cloud → [click here](https://smart-reasoning-chatbot-wt3kzhnpbwp9cwvjrvgcvy.streamlit.app/)
